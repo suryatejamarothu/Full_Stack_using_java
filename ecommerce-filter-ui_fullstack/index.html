@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>E-Commerce Filter UI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>ShopSmart</h1>
+</header>
+
+<main class="container">
+
+    <!-- FILTER SECTION -->
+    <aside class="filters">
+        <h2>Filters</h2>
+
+        <form id="filterForm">
+
+            <!-- Price Range -->
+            <label>Price Range</label>
+            <input type="range" min="500" max="5000" step="500">
+            <p>₹500 – ₹5000</p>
+
+            <!-- Color -->
+            <label>Color</label>
+            <div>
+                <input type="checkbox"> Red<br>
+                <input type="checkbox"> Blue<br>
+                <input type="checkbox"> Black<br>
+            </div>
+
+            <!-- Brand -->
+            <label>Brand</label>
+            <select>
+                <option>All</option>
+                <option>Apple</option>
+                <option>Samsung</option>
+                <option>OnePlus</option>
+            </select>
+
+            <!-- Ratings -->
+            <label>Customer Rating</label>
+            <div>
+                <input type="radio" name="rating"> 4★ & above<br>
+                <input type="radio" name="rating"> 3★ & above<br>
+            </div>
+
+        </form>
+    </aside>
+
+    <!-- PRODUCT SECTION -->
+    <section class="products">
+        <article class="product">
+            <h3>Smartphone A</h3>
+            <p>₹25,000</p>
+            <p>⭐⭐⭐⭐</p>
+        </article>
+
+        <article class="product">
+            <h3>Headphones B</h3>
+            <p>₹3,000</p>
+            <p>⭐⭐⭐</p>
+        </article>
+
+        <article class="product">
+            <h3>Laptop C</h3>
+            <p>₹55,000</p>
+            <p>⭐⭐⭐⭐⭐</p>
+        </article>
+    </section>
+
+</main>
+
+<footer>
+    <p>© 2026 ShopSmart</p>
+</footer>
+
+</body>
+</html>
