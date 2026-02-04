@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tantraz Registration Form</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h2>Tantraz Event Registration</h2>
+
+  <form id="registrationForm">
+
+    <!-- Full Name -->
+    <label for="fullname">Full Name</label>
+    <input type="text"
+           id="fullname"
+           name="fullname"
+           required
+           aria-label="Full name">
+
+    <!-- Email -->
+    <label for="email">Email Address</label>
+    <input type="email"
+           id="email"
+           name="email"
+           required
+           aria-label="Email address">
+
+    <!-- Participation Category -->
+    <label for="category">Participation Category</label>
+    <select id="category" name="category" required>
+      <option value="">-- Select Category --</option>
+      <option value="individual">Individual</option>
+      <option value="team">Team</option>
+      <option value="audience">Audience</option>
+    </select>
+
+    <!-- T-Shirt Size -->
+    <fieldset>
+      <legend>T-Shirt Size</legend>
+      <label>
+        <input type="radio" name="tshirt" value="S" required> S
+      </label>
+      <label>
+        <input type="radio" name="tshirt" value="M"> M
+      </label>
+      <label>
+        <input type="radio" name="tshirt" value="L"> L
+      </label>
+      <label>
+        <input type="radio" name="tshirt" value="XL"> XL
+      </label>
+    </fieldset>
+
+    <!-- Technical Interests -->
+    <fieldset>
+      <legend>Technical Interests</legend>
+      <label>
+        <input type="checkbox" name="interests" value="AI"> AI
+      </label>
+      <label>
+        <input type="checkbox" name="interests" value="Web Development">
+        Web Development
+      </label>
+      <label>
+        <input type="checkbox" name="interests" value="Cloud Computing">
+        Cloud Computing
+      </label>
+    </fieldset>
+
+    <!-- Expectations -->
+    <label for="expectations">Expectations / Suggestions</label>
+    <textarea id="expectations"
+              name="expectations"
+              rows="4"
+              placeholder="Share your expectations or suggestions..."></textarea>
+
+    <!-- Submit -->
+    <button type="submit">Register</button>
+
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>
