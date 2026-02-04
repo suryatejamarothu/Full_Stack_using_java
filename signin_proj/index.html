@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign In</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <section>
+    <h2>Sign In</h2>
+
+    <form id="signInForm" novalidate>
+      <label for="signInEmail">Email</label>
+      <input type="email"
+             id="signInEmail"
+             required
+             aria-label="Email for sign in">
+
+      <label for="signInPassword">Password</label>
+      <input type="password"
+             id="signInPassword"
+             required
+             minlength="8"
+             aria-label="Password for sign in">
+
+      <button type="submit">Sign In</button>
+      <div id="signInError" class="error"></div>
+    </form>
+
+    <p>
+      Don’t have an account?
+      <a href="signup.html">Sign Up</a>
+    </p>
+  </section>
+
+  <script src="form-validation.js"></script>
+</body>
+</html>

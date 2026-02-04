@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <section>
+    <h2>Sign Up</h2>
+
+    <form id="signUpForm" novalidate>
+      <label for="signUpName">Full Name</label>
+      <input type="text"
+             id="signUpName"
+             required
+             aria-label="Full name">
+
+      <label for="signUpEmail">Email</label>
+      <input type="email"
+             id="signUpEmail"
+             required
+             aria-label="Email for sign up">
+
+      <label for="signUpPassword">Password</label>
+      <input type="password"
+             id="signUpPassword"
+             required
+             minlength="8"
+             aria-label="Password for sign up">
+
+      <label for="signUpConfirm">Confirm Password</label>
+      <input type="password"
+             id="signUpConfirm"
+             required
+             aria-label="Confirm password">
+
+      <button type="submit">Create Account</button>
+      <div id="signUpError" class="error"></div>
+    </form>
+
+    <p>
+      Already have an account?
+      <a href="index.html">Sign In</a>
+    </p>
+  </section>
+
+  <script src="form-validation.js"></script>
+</body>
+</html>
